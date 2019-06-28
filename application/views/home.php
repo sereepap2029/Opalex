@@ -157,7 +157,7 @@
 				</div>
 			</div>
 			<div class="seemore__wrapper">
-				<button class="btn btn--seemore float-right" onclick="location.href='service.php';">ดูพนักงานทั้งหมด</button>
+				<button class="btn btn--seemore float-right" onclick="location.href='<?=site_url("maid_list")?>';">ดูพนักงานทั้งหมด</button>
 			</div>
 		</div>
 	</div>
