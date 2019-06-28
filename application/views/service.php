@@ -1,10 +1,3 @@
-<?php 
-  $page = 'home';
-  $title = 'Cleaning Service';
-  include 'meta.php';
-  include 'header.php';
-?>
-
 
 <main>
 
@@ -14,12 +7,12 @@
 			
 			<ul class="maid__listing">
 				<li>
-					<a href="single_maid.php">
+					<a href="<?=site_url("maid_detail")?>">
 						<div class="container-fluid maid__card" title="Maid Name">
 							<div class="row">
 								<div class="col-lg-3">
 									<figure>
-										<img src="img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
+										<img src="<?=site_url()?>img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
 									</figure>
 								</div>
 								<div class="col-lg-9">
@@ -33,19 +26,19 @@
 								</div>
 							</div>
 							<div class="sheep">
-								<img src="img/sheep2.png">
+								<img src="<?=site_url()?>img/sheep2.png">
 							</div>
 						</div>
 					</a>
 				</li>
 
 				<li>
-					<a href="single_maid.php">
+					<a href="<?=site_url("maid_detail")?>">
 						<div class="container-fluid maid__card" title="Maid Name">
 							<div class="row">
 								<div class="col-lg-3">
 									<figure>
-										<img src="img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
+										<img src="<?=site_url()?>img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
 									</figure>
 								</div>
 								<div class="col-lg-9">
@@ -59,19 +52,19 @@
 								</div>
 							</div>
 							<div class="sheep">
-								<img src="img/sheep2.png">
+								<img src="<?=site_url()?>img/sheep2.png">
 							</div>
 						</div>
 					</a>
 				</li>
 
 				<li>
-					<a href="single_maid.php">
+					<a href="<?=site_url("maid_detail")?>">
 						<div class="container-fluid maid__card" title="Maid Name">
 							<div class="row">
 								<div class="col-lg-3">
 									<figure>
-										<img src="img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
+										<img src="<?=site_url()?>img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
 									</figure>
 								</div>
 								<div class="col-lg-9">
@@ -85,19 +78,19 @@
 								</div>
 							</div>
 							<div class="sheep">
-								<img src="img/sheep2.png">
+								<img src="<?=site_url()?>img/sheep2.png">
 							</div>
 						</div>
 					</a>
 				</li>
 
 				<li>
-					<a href="single_maid.php">
+					<a href="<?=site_url("maid_detail")?>">
 						<div class="container-fluid maid__card" title="Maid Name">
 							<div class="row">
 								<div class="col-lg-3">
 									<figure>
-										<img src="img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
+										<img src="<?=site_url()?>img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
 									</figure>
 								</div>
 								<div class="col-lg-9">
@@ -111,19 +104,19 @@
 								</div>
 							</div>
 							<div class="sheep">
-								<img src="img/sheep2.png">
+								<img src="<?=site_url()?>img/sheep2.png">
 							</div>
 						</div>
 					</a>
 				</li>
 
 				<li>
-					<a href="single_maid.php">
+					<a href="<?=site_url("maid_detail")?>">
 						<div class="container-fluid maid__card" title="Maid Name">
 							<div class="row">
 								<div class="col-lg-3">
 									<figure>
-										<img src="img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
+										<img src="<?=site_url()?>img/maid/maid1_2.jpg" class="img-fluid maid__image" alt="Maid 1">
 									</figure>
 								</div>
 								<div class="col-lg-9">
@@ -137,7 +130,7 @@
 								</div>
 							</div>
 							<div class="sheep">
-								<img src="img/sheep2.png">
+								<img src="<?=site_url()?>img/sheep2.png">
 							</div>
 						</div>
 					</a>
@@ -151,7 +144,3 @@
 
 </main>  
 
-
-<?php 
-  include 'footer.php';
-?>

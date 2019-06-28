@@ -1,11 +1,3 @@
-<?php 
-  $page = 'home';
-  $title = 'Cleaning Service';
-  include 'meta.php';
-  include 'header.php';
-?>
-
-
 <main>
 
 	<!-- post__wrapper -->
@@ -14,7 +6,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<figure>
-						<img src="img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
+						<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 					</figure>
 				</div>
 				<div class="col-lg-6">
@@ -69,9 +61,9 @@
 				<div class="col-md-4">
 					<a href="single_maid.php" class="maid__card" title="Maid Name">
 						<figure>
-							<img src="img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
+							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
-								<img src="img/sheep.png">
+								<img src="<?=site_url()?>img/sheep.png">
 							</div>
 						</figure>
 						<h2 class="maid__name">Lorem Ipsum</h2>
@@ -86,9 +78,9 @@
 				<div class="col-md-4">
 					<a href="single_maid.php" class="maid__card" title="Maid Name">
 						<figure>
-							<img src="img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
+							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
-								<img src="img/sheep.png">
+								<img src="<?=site_url()?>img/sheep.png">
 							</div>
 						</figure>
 						<h2 class="maid__name">Lorem Ipsum</h2>
@@ -103,9 +95,9 @@
 				<div class="col-md-4">
 					<a href="single_maid.php" class="maid__card" title="Maid Name">
 						<figure>
-							<img src="img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
+							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
-								<img src="img/sheep.png">
+								<img src="<?=site_url()?>img/sheep.png">
 							</div>
 						</figure>
 						<h2 class="maid__name">Lorem Ipsum</h2>
@@ -124,8 +116,3 @@
 
 
 </main>  
-
-
-<?php 
-  include 'footer.php';
-?>

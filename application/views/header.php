@@ -39,13 +39,13 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto nav__ul">
 		      <li class="nav-item nav__list">
-		        <a class="nav-link nav__link" href="index.php#top">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link nav__link" href="<?=site_url()?>#top">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item nav__list">
-		        <a class="nav-link nav__link" href="service.php">Services</a>
+		        <a class="nav-link nav__link" href="<?=site_url("maid_list")?>">Services</a>
 		      </li>
 		      <li class="nav-item nav__list">
-		        <a class="nav-link nav__link" href="index.php#contact">Contact</a>
+		        <a class="nav-link nav__link" href="<?=site_url()?>#contact">Contact</a>
 		      </li>	      
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">

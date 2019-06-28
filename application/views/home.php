@@ -105,7 +105,7 @@
 		<div class="container">
 			<div class="row no-gutters">
 				<div class="col-md-4">
-					<a href="single_maid.php" class="maid__card" title="Maid Name">
+					<a href="<?=site_url("maid_detail")?>" class="maid__card" title="Maid Name">
 						<figure>
 							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
@@ -122,7 +122,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="single_maid.php" class="maid__card" title="Maid Name">
+					<a href="<?=site_url("maid_detail")?>" class="maid__card" title="Maid Name">
 						<figure>
 							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
@@ -139,7 +139,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="single_maid.php" class="maid__card" title="Maid Name">
+					<a href="<?=site_url("maid_detail")?>" class="maid__card" title="Maid Name">
 						<figure>
 							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
