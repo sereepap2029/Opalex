@@ -12,7 +12,7 @@
     		<div class="row">
     			<div class="col-lg-6">
     				<div class="banner__logo">
-	    				<a href="index.php"><img src="img/logo.png" alt="Logo"></a>
+	    				<a href="index.php"><img src="<?=site_url()?>img/logo.png" alt="Logo"></a>
 	    			</div>
     			</div>
     			<div class="col-lg-6 banner__contact__wrapper">

@@ -27,9 +27,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-    <link href="css/opalex.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?=site_url()?>owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?=site_url()?>owlcarousel/owl.theme.default.min.css">
+    <link href="<?=site_url()?>css/opalex.css" rel="stylesheet">
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -1,9 +1,4 @@
-<?php 
-  $page = 'home';
-  $title = 'Cleaning Service';
-  include 'meta.php';
-  include 'header.php';
-?>
+
 
 
 <main>
@@ -57,32 +52,32 @@
 					<div class="owl-carousel owl-theme" id="gallery__carousel">
 					  <div class="gallery">
 					  	<figure>
-					  		<img src="img/gallery/image1.jpg" class="img-fluid" alt="Image1">
+					  		<img src="<?=site_url()?>img/gallery/image1.jpg" class="img-fluid" alt="Image1">
 					  	</figure>
 					  </div>
 					  <div class="gallery">
 					  	<figure>
-					  		<img src="img/gallery/image2.jpg" class="img-fluid" alt="Image2">
+					  		<img src="<?=site_url()?>img/gallery/image2.jpg" class="img-fluid" alt="Image2">
 					  	</figure>
 					  </div>
 					  <div class="gallery">
 					  	<figure>
-					  		<img src="img/gallery/image3.jpg" class="img-fluid" alt="Image3">
+					  		<img src="<?=site_url()?>img/gallery/image3.jpg" class="img-fluid" alt="Image3">
 					  	</figure>
 					  </div>
 					  <div class="gallery">
 					  	<figure>
-					  		<img src="img/gallery/image1.jpg" class="img-fluid" alt="Image1">
+					  		<img src="<?=site_url()?>img/gallery/image1.jpg" class="img-fluid" alt="Image1">
 					  	</figure>
 					  </div>
 					  <div class="gallery">
 					  	<figure>
-					  		<img src="img/gallery/image2.jpg" class="img-fluid" alt="Image2">
+					  		<img src="<?=site_url()?>img/gallery/image2.jpg" class="img-fluid" alt="Image2">
 					  	</figure>
 					  </div>
 					  <div class="gallery">
 					  	<figure>
-					  		<img src="img/gallery/image3.jpg" class="img-fluid" alt="Image3">
+					  		<img src="<?=site_url()?>img/gallery/image3.jpg" class="img-fluid" alt="Image3">
 					  	</figure>
 					  </div>
 					</div>
@@ -112,9 +107,9 @@
 				<div class="col-md-4">
 					<a href="single_maid.php" class="maid__card" title="Maid Name">
 						<figure>
-							<img src="img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
+							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
-								<img src="img/sheep.png">
+								<img src="<?=site_url()?>img/sheep.png">
 							</div>
 						</figure>
 						<h2 class="maid__name">Lorem Ipsum</h2>
@@ -129,9 +124,9 @@
 				<div class="col-md-4">
 					<a href="single_maid.php" class="maid__card" title="Maid Name">
 						<figure>
-							<img src="img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
+							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
-								<img src="img/sheep.png">
+								<img src="<?=site_url()?>img/sheep.png">
 							</div>
 						</figure>
 						<h2 class="maid__name">Lorem Ipsum</h2>
@@ -146,9 +141,9 @@
 				<div class="col-md-4">
 					<a href="single_maid.php" class="maid__card" title="Maid Name">
 						<figure>
-							<img src="img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
+							<img src="<?=site_url()?>img/maid/maid1.jpg" class="img-fluid maid__image" alt="Maid 1">
 							<div class="sheep">
-								<img src="img/sheep.png">
+								<img src="<?=site_url()?>img/sheep.png">
 							</div>
 						</figure>
 						<h2 class="maid__name">Lorem Ipsum</h2>
@@ -198,8 +193,3 @@
 	<!-- end contact__wrapper -->
 
 </main>  
-
-
-<?php 
-  include 'footer.php';
-?>
