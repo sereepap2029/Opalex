@@ -1,0 +1,15 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.save-sticky{
+              position: fixed;
+              top: 15%;
+              right: 5%;
+            }
+.red-section label{
+	color: red;
+}            
