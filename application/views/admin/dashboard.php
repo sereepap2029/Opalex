@@ -19,51 +19,45 @@ $month_name_arr = array(
     <main role="main" class="container">
     	<div class="container">
 		  <div class="row">
-		  <div class="col col-md-4">
-		  	<div class="card" style="width: 18rem;">
-			  <img class="card-img-top" src="<?=site_url("images/37767462_1813317648735714_5034780369128259584_n.jpg")?>" alt="Card image cap">
-			  <div class="card-body">
-			    <p class="card-text">งานออมสิน  ,สหกรณ์  ,CIMB และอื่นๆ</p>
-			    <a href="<?=site_url("main/aom")?>" class="btn btn-primary btn-lg">งานทั่วไป</a>
-			  </div>
-			</div>
-			</div>
-			<div class="col col-md-4">
-			<div class="card" style="width: 18rem;">
-			  <img class="card-img-top" src="<?=site_url("images/fong_dash.PNG")?>" alt="Card image cap">
-			  <div class="card-body">
-			    <p class="card-text">งานฟ้องกยศ.  และกรอ</p>
-			    <a href="<?=site_url("main/fong")?>" class="btn btn-primary btn-lg">งานฟ้อง</a>
-			  </div>
-			</div>
-			</div>
-			<div class="col col-md-4">
-			<div class="card" style="width: 18rem;">
-			  <img class="card-img-top" src="<?=site_url("images/37767462_1813317648735714_5034780369128259584_n.jpg")?>" alt="Card image cap">
-			  <div class="card-body">
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			    <a href="<?=site_url("main/bang")?>" class="btn btn-primary btn-lg">งานบังคับคดี</a>
-			  </div>
-			</div>
-		  </div>
-      <div class="col col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="<?=site_url("images/37767462_1813317648735714_5034780369128259584_n.jpg")?>" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="<?=site_url("task")?>" class="btn btn-primary btn-lg">หน้าที่มอบหมาย</a>
+  		  <div class="col col-md-4">
+  		  	<div class="card" style="width: 18rem;">
+  			  <img class="card-img-top" src="<?=site_url("img/maid/maid1_2.jpg")?>" alt="Card image cap">
+  			  <div class="card-body">
+  			    <p class="card-text">Maid</p>
+  			    <a href="<?=site_url("admin/maid")?>" class="btn btn-primary btn-lg">Maid</a>
+  			  </div>
+  			</div>
+  			</div>
+  			<div class="col col-md-4">
+  			<div class="card" style="width: 18rem;">
+  			  <img class="card-img-top" src="<?=site_url("img/slider/slider3.jpg")?>" alt="Card image cap">
+  			  <div class="card-body">
+  			    <p class="card-text">Banner</p>
+  			    <a href="<?=site_url("admin/banner")?>" class="btn btn-primary btn-lg">Banner</a>
+  			  </div>
+  			</div>
+  			</div>
+  			<div class="col col-md-4">
+  			<div class="card" style="width: 18rem;">
+  			  <img class="card-img-top" src="<?=site_url("img/gallery/image1.jpg")?>" alt="Card image cap">
+  			  <div class="card-body">
+  			    <p class="card-text">Gallery</p>
+  			    <a href="<?=site_url("admin/gallery")?>" class="btn btn-primary btn-lg">Gallery</a>
+  			  </div>
+  			</div>
+  		  </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="<?=site_url("img/sheep.png")?>" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Contact</p>
+            <a href="<?=site_url("admin/contact")?>" class="btn btn-primary btn-lg">Contact</a>
+          </div>
         </div>
-      </div>
-      </div>
-      <div class="col col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="<?=site_url("images/37767462_1813317648735714_5034780369128259584_n.jpg")?>" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="<?=site_url("main/daily_news")?>" class="btn btn-primary btn-lg">งานประจำวัน</a>
         </div>
-      </div>
-      </div>
 		  </div>
 		</div>
       <script type="text/javascript">

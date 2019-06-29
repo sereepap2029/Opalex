@@ -38,14 +38,25 @@ class Admin_user extends CI_Controller {
 	}
 	public function delete()
 	{
+
 		$id=$this->uri->segment(4,'');
-		$this->m_admin->delete_admin($id);
-		?>
+		if (isset($this->user_data->perm['delete'])) {
+			$this->m_admin->delete_admin($id);
+			?>
 				        <script type="text/javascript">
 				        	alert("ลบข้อมูลเรียบร้อยแล้ว");
 				            window.open("<?echo site_url('admin/admin_user');?>","_self");            
 				        </script>
 				    <?
+		}else{
+			?>
+				        <script type="text/javascript">
+				        	alert("ไม่มีสิทธิลบข้อมูล");
+				            window.open("<?echo site_url('admin/admin_user');?>","_self");            
+				        </script>
+				    <?
+		}
+		
 	}
 	public function ajax_set_perm()
 	{

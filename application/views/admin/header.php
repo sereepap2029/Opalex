@@ -21,9 +21,7 @@ $ci =& get_instance();
     <link rel="stylesheet" href="<?=site_url()?>/css/chosen.css">
     <!-- Custom styles for this template -->
     <link href="<?=site_url()?>css/styles.css?v=1" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="<?=site_url()?>js/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="<?=site_url()?>js/jquery-3.3.1.min.js"></script>
     <script src="<?echo site_url();?>js/jquery.datetimepicker.js"></script>
     <script src="<?=site_url()?>jquery-ui-1.12.1/jquery-ui.js"></script>
     <script src="<?=site_url()?>js/jquery.fancybox.js"></script>
@@ -35,7 +33,7 @@ $ci =& get_instance();
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#" style="width: 25px;"><img src="<?=site_url()?>images/logo_9.1.jpg" style="width: 46px;position: absolute;left: 0px;top: 0px;"></a>
+      <a class="navbar-brand" href="#" style="width: 25px;"><img src="<?=site_url()?>img/logo.png" style="width: 70px;position: absolute;left: 2px;top: 20px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,6 +42,13 @@ $ci =& get_instance();
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="<?=site_url("admin/main/dashboard")?>">Home</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maid</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="<?=site_url("admin/maid/create")?>">Create</a>
+              <a class="dropdown-item" href="<?=site_url("admin/maid")?>">Maid List</a>
+            </div>
           </li>
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ผู้ดูแล</a>

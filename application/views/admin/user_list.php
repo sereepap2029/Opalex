@@ -7,7 +7,7 @@
 
     <div class="row">
       <div class="col col-md-8">
-        <button type="button" class="btn btn-primary" onclick="location.href='<?=site_url("admin_user/create")?>';">Create users</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='<?=site_url("admin/admin_user/create")?>';">Create users</button>
       </div>
     </div>
 
@@ -54,7 +54,7 @@
           if ($pagenum>1&&$pagenum<=$pagecount) {
             ?>
             <li class="page-item">
-              <a class="page-link" href="<?=site_url("admin_user/".($pagenum-1))?>" aria-label="Previous">
+              <a class="page-link" href="<?=site_url("admin/admin_user/".($pagenum-1))?>" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
                 <span class="sr-only">Previous</span>
               </a>
@@ -63,7 +63,7 @@
           }
           for ($i=1; $i <=$pagecount ; $i++) { 
             ?>
-            <li class="page-item"><a class="page-link" href="<?=site_url("admin_user/".$i)?>"><?=$i?></a></li>
+            <li class="page-item"><a class="page-link" href="<?=site_url("admin/admin_user/".$i)?>"><?=$i?></a></li>
             <?
           }
           ?>          
@@ -71,7 +71,7 @@
           if ($pagenum>=1&&$pagenum<$pagecount) {
             ?>
             <li class="page-item">
-              <a class="page-link" href="<?=site_url("admin_user/".($pagenum+1))?>" aria-label="Next">
+              <a class="page-link" href="<?=site_url("admin/admin_user/".($pagenum+1))?>" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
                 <span class="sr-only">Next</span>
               </a>
