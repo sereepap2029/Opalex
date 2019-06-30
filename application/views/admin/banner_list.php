@@ -29,7 +29,7 @@
           ?>
           <tr>
             <td><?=$key+1?> <input class="sort_item" type="hidden" name="sort[]" value="<?=$value->id?>"></td>
-            <td><img src="<?=site_url("media/banner/".$value->main_pic)?>" width="400"></td>
+            <td><img src="<?=site_url("media/banner/".$value->main_pic)?>" height="100"></td>
             <td><?=$value->title?></td>
             <td><?=$value->des?></td>       
             <td>
