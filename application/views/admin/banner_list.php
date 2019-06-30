@@ -23,12 +23,12 @@
             <th width="150">ตัวเลือก</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="sortable">
         <?
         foreach ($banner_list as $key => $value) {
           ?>
           <tr>
-            <td><?=$key+1?></td>
+            <td><?=$key+1?> <input class="sort_item" type="hidden" name="sort[]" value="<?=$value->id?>"></td>
             <td><img src="<?=site_url("media/banner/".$value->main_pic)?>" width="400"></td>
             <td><?=$value->title?></td>
             <td><?=$value->des?></td>       
@@ -58,5 +58,17 @@
             window.open(link,"_self")
         };
     }    
+    $( ".sortable" ).sortable({
+      update: function( event, ui ) {
+        $.ajax({
+          method: "POST",
+          url: "<?=site_url("admin/banner/ajax_sort")?>",
+          data: $( ".sort_item" ).serialize()
+        })
+          .done(function( msg ) {
+            //alert( "Data Saved: " + msg );
+          });
+      }
+    });
     </script>
 

@@ -128,4 +128,20 @@ class Banner extends CI_Controller {
 		$this->load->view('admin/create_banner',$data);
 		$this->load->view('admin/footer',$data);
 	}
+
+	public function ajax_sort()
+	{
+		header('Content-Type: application/json');
+        $json = array();
+        $json['flag']="OK";
+        $sort_order=0;
+        foreach ($_POST['sort'] as $key => $value) {
+        	$sort_order+=1;
+        	$up_dat = array(
+	        		'sort_order' => $sort_order, 
+	        );
+	        $this->m_banner->update_banner($up_dat,$value);
+        }	
+		echo json_encode($json);		    
+	}
 }
