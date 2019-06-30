@@ -51,6 +51,13 @@ $ci =& get_instance();
             </div>
           </li>
           <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Banner</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="<?=site_url("admin/banner/create")?>">Create</a>
+              <a class="dropdown-item" href="<?=site_url("admin/banner")?>">Banner List</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ผู้ดูแล</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="<?=site_url("admin/admin_user/create")?>">เพิ่มผู้ดูแล</a>

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80016
 File Encoding         : 65001
 
-Date: 2019-06-28 19:20:48
+Date: 2019-07-01 00:30:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -36,6 +36,24 @@ CREATE TABLE `admin_user` (
 INSERT INTO `admin_user` VALUES ('1234567890', 'sadmin', 'sadmin', 'sadmin', 'sadmin', 'ddd', 'นาย', null);
 
 -- ----------------------------
+-- Table structure for `banner`
+-- ----------------------------
+DROP TABLE IF EXISTS `banner`;
+CREATE TABLE `banner` (
+  `id` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `des` text COLLATE utf8_unicode_ci,
+  `sort_order` bigint(11) DEFAULT '999',
+  `main_pic` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of banner
+-- ----------------------------
+INSERT INTO `banner` VALUES ('0fabae23f4', 'Tate no Yuusha no Nariagari', 'dasdas', '999', '0fabae23f4-1561915777_main.png');
+
+-- ----------------------------
 -- Table structure for `ci_sessions`
 -- ----------------------------
 DROP TABLE IF EXISTS `ci_sessions`;
@@ -49,6 +67,25 @@ CREATE TABLE `ci_sessions` (
 
 -- ----------------------------
 -- Records of ci_sessions
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `maid`
+-- ----------------------------
+DROP TABLE IF EXISTS `maid`;
+CREATE TABLE `maid` (
+  `id` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `maid_name` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `maid_list_des` text COLLATE utf8_unicode_ci,
+  `maid_description` text COLLATE utf8_unicode_ci,
+  `maid_short_des` text COLLATE utf8_unicode_ci,
+  `thumb_pic` text COLLATE utf8_unicode_ci,
+  `main_pic` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of maid
 -- ----------------------------
 
 -- ----------------------------
