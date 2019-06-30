@@ -28,6 +28,8 @@ $ci =& get_instance();
     <link rel="stylesheet" type="text/css" href="<?=site_url()?>DataTables/datatables.min.css"/> 
     <script type="text/javascript" src="<?=site_url()?>DataTables/datatables.min.js"></script>
     <script type="text/javascript" src="<?=site_url()?>js/jqueryui_datepicker_thai_min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvhvoLqcbjRdoQm0_j8MzAVEcGek6Omdw"
+    async defer></script>
   </head>
 
   <body>
@@ -59,6 +61,9 @@ $ci =& get_instance();
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="<?=site_url("admin/gallery")?>">Gallery</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="<?=site_url("admin/contact")?>">Contact</a>
           </li>
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ผู้ดูแล</a>
