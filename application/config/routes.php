@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['admin/admin_user/[0-9]+'] = 'admin/admin_user';
 $route['admin/banner/[0-9]+'] = 'admin/banner';
 $route['admin/maid/[0-9]+'] = 'admin/maid';
-$route['daily_news/[0-9]+'] = 'daily_news';
+$route['maid_detail/[0-9a-z]+'] = 'maid_detail';
 $route['lawyer/[0-9]+'] = 'lawyer';
 $route['task/[0-9]+'] = 'task';
 $route['main/dashboard/[0-9]+'] = 'main/dashboard';

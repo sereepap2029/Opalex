@@ -48,7 +48,7 @@ class M_maid extends CI_Model
             $this->db->limit($limit, $offset);
         }
         foreach ($filter as $key => $value) {
-            $this->db->where($key, $value);
+            $this->db->like($key, $value);
         }
         $query = $this->db->get('maid');
         

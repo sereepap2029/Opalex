@@ -18,13 +18,26 @@ class Maid_detail extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct() {
+        parent::__construct();       
+        $this->load->model('m_banner'); 
+        $this->load->model('m_contact');  
+        $this->load->model('m_gallery');
+        $this->load->model('m_maid');
+    }
 	public function index()
 	{
+		$id=$this->uri->segment(2,'');
+		$data['maid']=$this->m_maid->get_maid_by_id($id);
 		$data_head["page"]="home";
 		$data_head["title"]="Cleaning Service";
+		$data['contact']=$this->m_contact->get_contact();
+		$data['maid_list'] = $this->m_maid->get_all_maid();
+		shuffle($data['maid_list']);
+		$data_head["contact"]=$data['contact'];
 		$this->load->view('meta',$data_head);
 		$this->load->view('header',$data_head);
-		$this->load->view('single_maid');
-		$this->load->view('footer');
+		$this->load->view('single_maid',$data);
+		$this->load->view('footer',$data_head);
 	}
 }

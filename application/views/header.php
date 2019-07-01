@@ -17,8 +17,8 @@
     			</div>
     			<div class="col-lg-6 banner__contact__wrapper">
     				<div class="banner__contact">
-	    				<p class="banner__phone">Tel: <a href="tel:08X-XXX-XXXX">08X-XXX-XXXX</a></p>
-						<p class="banner__email"><a href="mailto:LOREM_IPSUM@GMAIL.COM">LOREM_IPSUM@GMAIL.COM</a></p>
+	    				<p class="banner__phone">Tel: <a href="tel:<?=$contact->phone?>"><?=$contact->phone?></a></p>
+						<p class="banner__email"><a href="mailto:<?=$contact->email?>"><?=$contact->email?></a></p>
 	    			</div>
     			</div>
     		</div>
@@ -48,8 +48,8 @@
 		        <a class="nav-link nav__link" href="<?=site_url()?>#contact">Contact</a>
 		      </li>	      
 		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		    <form method="post" action="<?=site_url("maid_list")?>" class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
 		      <button class="btn btn--light my-2 my-sm-0 ml-auto ml-md-0" type="submit"><i class="fas fa-search"></i></button>
 		    </form>
 		  </div>

@@ -42,13 +42,19 @@
     <script>
       var map;
       function initMap() {
+        var myLatLng = {lat: <?=$contact->lat?>, lng: <?=$contact->lon?>};
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 13.765138, lng: 100.538263},
-          zoom: 8
+          center: myLatLng,
+          zoom: 18
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "I'm here"
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY_EpNEL_7lsOS114YrEoPj8Nor2yoyjo&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvhvoLqcbjRdoQm0_j8MzAVEcGek6Omdw&callback=initMap"
     async defer></script>
 
     

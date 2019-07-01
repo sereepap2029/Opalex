@@ -49,7 +49,7 @@
 
           <div class="form-group">
             <label for="maid_short_des">คำอธิบายสั้นๆ</label>
-            <input type="text" class="form-control" name="maid_short_des" placeholder="Short description" id="maid_short_des" <?if (isset($edit)) { echo "value='".$maid->maid_short_des."'";}?>>
+            <textarea class="form-control" id="maid_short_des" rows="3" name="maid_short_des"><?if (isset($edit)) { echo $maid->maid_short_des;}?></textarea>
           </div>
 
           <div class="form-group">

@@ -8,25 +8,25 @@
 				<div class="col-lg-4">
 					<div class="footer__social">
 						<div class="social">
-							<a href="mailto:abc@abc.com">
+							<a href="mailto:<?=$contact->email?>">
 								<i class="far fa-envelope"></i>
 							</a>
 						</div>
 
 						<div class="social">
-							<a href="#">
+							<a href="<?=$contact->twister?>">
 								<i class="fab fa-twitter"></i>
 							</a>
 						</div>
 
 						<div class="social">
-							<a href="#">
+							<a href="<?=$contact->facebook?>">
 								<i class="fab fa-facebook-f"></i>
 							</a>
 						</div>
 
 						<div class="social">
-							<a href="tel:02xxxxxxx">
+							<a href="tel:<?=$contact->phone?>">
 								<i class="fas fa-phone"></i>
 							</a>
 						</div>

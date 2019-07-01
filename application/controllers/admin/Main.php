@@ -33,11 +33,11 @@ class Main extends CI_Controller {
                 $this->user_data = $user_data;
             }
             else {
-                redirect('main/logout');
+                redirect('admin/main/logout');
             }
         }
         else {
-            redirect('main/logout');
+            redirect('admin/main/logout');
         }
 		$data['page'] = 'home';
 		$data['month_name_arr'] = $this->m_stringlib->month_name_arr;
@@ -107,6 +107,6 @@ class Main extends CI_Controller {
 		$this->session->set_userdata('username', '');
 		$this->session->set_userdata('id', '');
 		$this->session->sess_destroy();
-		redirect('main');
+		redirect('admin/main');
 	}
 }
